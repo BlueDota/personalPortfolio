@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #674646;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+
+    }
+
+    .containerOne,
+    .containerTwo {
+        width: 100vw;
+        height: 100vh;
+        background-image:
+            repeating-linear-gradient(0deg, transparent, transparent 19px, rgba(34, 197, 94, 0.15) 19px, rgba(34, 197, 94, 0.15) 20px, transparent 20px, transparent 39px, rgba(34, 197, 94, 0.15) 39px, rgba(34, 197, 94, 0.15) 40px),
+            repeating-linear-gradient(90deg, transparent, transparent 19px, rgba(34, 197, 94, 0.15) 19px, rgba(34, 197, 94, 0.15) 20px, transparent 20px, transparent 39px, rgba(34, 197, 94, 0.15) 39px, rgba(34, 197, 94, 0.15) 40px),
+            radial-gradient(circle at 20px 20px, rgba(16, 185, 129, 0.18) 2px, transparent 2px),
+            radial-gradient(circle at 40px 40px, rgba(16, 185, 129, 0.18) 2px, transparent 2px);
+        background-size: 40px 40px, 40px 40px, 40px 40px, 40px 40px;
+        display: grid;
+        place-items: center;
+
+    }
+
+    .infoBox {
+        width: 500px;
+        height: 500px;
+        background-color: #8d4848;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 20px;
+    }
+
+    .containerTwo {
+        background-color: royalblue;
+    }
+
+    p {
+        font-size: 3rem;
+
+        text-align: center;
+        color: white;
+    }
+</style>
+
+<body>
+    <main class="containerOne">
+
+        <div class="infoBox">
+            <p>
+                Portafolio en contrucción :V
+            </p>
+        </div>
+    </main>
+    <main class="containerTwo">
+
+    </main>
+
+</body>
+
+</html>
