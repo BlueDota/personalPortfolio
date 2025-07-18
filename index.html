@@ -45,7 +45,7 @@
     .infoBox {
         width: 500px;
         height: 500px;
-        background-color: #8d4848;
+        background-color: #927070;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -54,7 +54,7 @@
     }
 
     .containerTwo {
-        background-color: royalblue;
+        background-color: rgb(90, 93, 104);
     }
 
     p {
@@ -63,6 +63,24 @@
         text-align: center;
         color: white;
     }
+    .coche {
+  width: 40px;
+  height: 20px;
+  background: red;
+
+  /* 1. El carril es un círculo de 100 px de radio */
+  offset-path: circle(100px at center);
+
+  /* 2. Empieza en el 0 % del círculo */
+  offset-distance: 0%;
+
+  /* 3. Se mueve hasta el 100 % en 4 segundos */
+  animation: dar-vuelta 4s linear infinite;
+}
+
+@keyframes dar-vuelta {
+  to { offset-distance: 100%; }
+}
 </style>
 
 <body>
@@ -76,6 +94,7 @@
     </main>
     <main class="containerTwo">
 
+        <div class="coche"></div>
     </main>
 
 </body>
