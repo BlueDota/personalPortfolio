@@ -1,103 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0Ij48cGF0aCBmaWxsPSIjMDAwMDAwIiBkPSJNNTEyIDEwMjRxLTEwNCAwLTE5OS00MC41dC0xNjMuNS0xMDlUNDAuNSA3MTFUMCA1MTJ0NDAuNS0xOTl0MTA5LTE2My41VDMxMyA0MC41VDUxMiAwdDE5OSA0MC41dDE2My41IDEwOXQxMDkgMTYzLjV0NDAuNSAxOTl0LTQwLjUgMTk5dC0xMDkgMTYzLjV0LTE2My41IDEwOXQtMTk5IDQwLjVNMzc0IDM3N3E5LTEwIDktMjR0LTkuNS0yNHQtMjMuNS0xMHQtMjQgMTBsLTM5IDM5bC0zOC0zOXEtMTAtMTAtMjQtMTB0LTI0IDEwdC0xMCAyNHQxMCAyNGwzOSAzOGwtMzkgMzlxLTEwIDEwLTEwIDI0dDEwIDIzLjV0MjQgOS41dDI0LTlsMzgtMzlsMzkgMzlxMTAgOSAyNCA5dDIzLjUtOS41VDM4MyA0Nzh0LTktMjRsLTM5LTM5em0xMzggMzI3cS01MyAwLTkwLjUgMjhUMzg0IDgwMHQzNy41IDY4dDkwLjUgMjh0OTAuNS0yOHQzNy41LTY4dC0zNy41LTY4dC05MC41LTI4bTMxMC0zMjdxOS0xMCA5LTI0dC05LjUtMjR0LTIzLjUtMTB0LTI0IDEwbC0zOSAzOWwtMzgtMzlxLTEwLTEwLTI0LTEwdC0yNCAxMHQtMTAgMjR0MTAgMjRsMzkgMzhsLTM5IDM5cS0xMCAxMC0xMCAyNHQxMCAyMy41dDI0IDkuNXQyNC05bDM4LTM5bDM5IDM5cTEwIDkgMjQgOXQyMy41LTkuNVQ4MzEgNDc4dC05LTI0bC0zOS0zOXoiLz48L3N2Zz4=" type="svg+xml">
-    <title>Portafolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio — Ivancho</title>
+  <meta name="description" content="Portafolio profesional de Ivancho: proyectos, habilidades, experiencia, educación y contacto. Tema oscuro, responsive, con filtros y PDF." />
+
 </head>
-
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #674646;
-        color: #333;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        overflow-x: hidden;
-
-    }
-
-    .containerOne,
-    .containerTwo {
-        width: 100vw;
-        height: 100vh;
-        background-image:
-            repeating-linear-gradient(0deg, transparent, transparent 19px, rgba(34, 197, 94, 0.15) 19px, rgba(34, 197, 94, 0.15) 20px, transparent 20px, transparent 39px, rgba(34, 197, 94, 0.15) 39px, rgba(34, 197, 94, 0.15) 40px),
-            repeating-linear-gradient(90deg, transparent, transparent 19px, rgba(34, 197, 94, 0.15) 19px, rgba(34, 197, 94, 0.15) 20px, transparent 20px, transparent 39px, rgba(34, 197, 94, 0.15) 39px, rgba(34, 197, 94, 0.15) 40px),
-            radial-gradient(circle at 20px 20px, rgba(16, 185, 129, 0.18) 2px, transparent 2px),
-            radial-gradient(circle at 40px 40px, rgba(16, 185, 129, 0.18) 2px, transparent 2px);
-        background-size: 40px 40px, 40px 40px, 40px 40px, 40px 40px;
-        display: grid;
-        place-items: center;
-
-    }
-
-    .infoBox {
-        width: 500px;
-        height: 500px;
-        background-color: #927070;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        border-radius: 20px;
-    }
-
-    .containerTwo {
-        background-color: rgb(90, 93, 104);
-    }
-
-    p {
-        font-size: 3rem;
-
-        text-align: center;
-        color: white;
-    }
-    .coche {
-  width: 40px;
-  height: 20px;
-  background: red;
-
-  /* 1. El carril es un círculo de 100 px de radio */
-  offset-path: circle(100px at center);
-
-  /* 2. Empieza en el 0 % del círculo */
-  offset-distance: 0%;
-
-  /* 3. Se mueve hasta el 100 % en 4 segundos */
-  animation: dar-vuelta 1s linear infinite;
-}
-
-@keyframes dar-vuelta {
-  to { offset-distance: 100%; }
-}
-</style>
-
 <body>
-    <main class="containerOne">
+  <header class="no-print">
+    <div class="container nav">
+      <div class="spacer"></div>
+      <a class="btn" href="#contacto">Contacto</a>
+      <button class="btn" id="printCv">Descargar PDF</button>
+    </div>
+  </header>
 
-        <div class="infoBox">
-            <p>
-                Portafolio en construcción :V
-            </p>
-        </div>
-    </main>
-    <main class="containerTwo">
+  <div class="container hero">
+    <div>
+      <span class="tag">Disponible para trabajo</span>
+      <h1>Ivancho — Desarrollador Web</h1>
+      <p class="subtitle">Construyo sitios y apps rápidas, accesibles y con buen diseño. Me enfoco en experiencias limpias, rendimiento y DX.</p>
+      <div class="cta no-print">
+        <a class="btn primary" href="#proyectos">Ver proyectos</a>
+        <a class="btn" href="#habilidades">Habilidades</a>
+        <a class="btn" href="#experiencia">Experiencia</a>
+      </div>
+    </div>
+    <div>
+      <img alt="Foto/Avatar" src="https://avatars.githubusercontent.com/u/583231?v=4" style="border-radius:14px;border:1px solid var(--line)"/>
+    </div>
+  </div>
 
-        <div class="coche"></div>
-    </main>
+  <section id="habilidades" class="container panel skills">
+    <h2>Habilidades</h2>
+    <div class="chips">
+      <span class="chip">HTML5</span>
+      <span class="chip">CSS3</span>
+      <span class="chip">JavaScript</span>
+      <span class="chip">TypeScript</span>
+      <span class="chip">React</span>
+      <span class="chip">Node.js</span>
+      <span class="chip">Git</span>
+      <span class="chip">Tailwind</span>
+      <span class="chip">UI/UX</span>
+      <span class="chip">Pruebas</span>
+    </div>
+  </section>
 
+  <section id="proyectos" class="container panel projects">
+    <div class="toolbar">
+      <div class="search">
+        <svg width="18" height="18" fill="#cfe0ff" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.53 20.47l-4.66-4.66A7.5 7.5 0 1016 17.73l4.66 4.66 1.06-1.06zM4 10.5a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0z"/></svg>
+        <input id="search" placeholder="Buscar proyectos o tags..." aria-label="Buscar" />
+      </div>
+      <div class="filters no-print">
+        <span class="chip" data-filter="web" data-active="true">Web</span>
+        <span class="chip" data-filter="ui" data-active="true">UI</span>
+        <span class="chip" data-filter="tools" data-active="true">Tools</span>
+      </div>
+    </div>
+    <div class="grid" id="projGrid"></div>
+  </section>
+
+  <section id="experiencia" class="container panel timeline">
+    <h2>Experiencia</h2>
+    <div class="item">
+      <div>💼</div>
+      <div>
+        <h4>Desarrollador Frontend — Freelance</h4>
+        <small>2023 — Presente · Remoto</small>
+        <p>Diseño y desarrollo de landing pages y dashboards con enfoque en rendimiento y accesibilidad.</p>
+      </div>
+    </div>
+    <div class="item">
+      <div>💼</div>
+      <div>
+        <h4>Practicante — Startup</h4>
+        <small>2022 — 2023 · Híbrido</small>
+        <p>Soporte en componentes UI y automatización de pequeñas tareas en Node.js.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="educacion" class="container panel timeline">
+    <h2>Educación</h2>
+    <div class="item">
+      <div>🎓</div>
+      <div>
+        <h4>Ingeniería/Informática (curso/bootcamp)</h4>
+        <small>2020 — 2022</small>
+        <p>Fundamentos de programación, estructuras de datos, web, Git y prácticas de equipo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="container panel contact">
+    <h2>Contacto</h2>
+    <form class="no-print" id="contactForm">
+      <input id="name" placeholder="Tu nombre" required />
+      <input id="email" type="email" placeholder="Tu email" required />
+      <textarea id="msg" rows="4" placeholder="Tu mensaje" required></textarea>
+      <button type="submit" class="btn">Enviar</button>
+      <small>Se abrirá tu cliente de correo con el mensaje listo.</small>
+    </form>
+    <div>
+      <b>Email:</b> <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a> · <b>GitHub:</b> <a href="#" rel="noopener">github.com/tuusuario</a>
+    </div>
+  </section>
+
+  <dialog id="modal">
+    <article style="padding:16px">
+      <h3 id="mTitle">Proyecto</h3>
+      <p id="mBody">Descripción del proyecto...</p>
+      <div class="cta">
+        <a id="mDemo" class="btn" target="_blank" rel="noopener">Demo</a>
+        <a id="mRepo" class="btn" target="_blank" rel="noopener">Repo</a>
+        <button class="btn" id="mClose">Cerrar</button>
+      </div>
+    </article>
+  </dialog>
+
+  <script>
+  
+  </script>
 </body>
-
 </html>
