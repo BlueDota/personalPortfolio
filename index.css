@@ -73,10 +73,7 @@ header {
 }
 
 .hero {
-    display: grid;
-    grid-template-columns: 1.1fr .9fr;
-    gap: 24px;
-    align-items: center
+
 }
 
 @media(max-width:960px) {
