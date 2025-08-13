@@ -37,7 +37,11 @@ img {
     max-width: 100%;
     display: block
 }
-
+.imgContainer{
+   
+    display: grid;
+    place-items: center;
+}
 .container {
     max-width: 1160px;
     margin: 0 auto;
@@ -73,7 +77,10 @@ header {
 }
 
 .hero {
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: center
 }
 
 @media(max-width:960px) {
