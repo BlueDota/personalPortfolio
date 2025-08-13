@@ -78,7 +78,7 @@ img {
        var(--line) 240deg 300deg,
        var(--brand) 300deg 360deg
    );
-   animation: border 3s linear infinite;
+   animation: border 2s linear infinite;
 }
 .imgBorder::before{
     filter: blur(80px);
