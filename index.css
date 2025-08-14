@@ -217,7 +217,7 @@ section {
 .search {
     position: relative;
     flex: 1;
-    min-width: min(360px, 70vw)
+    min-width: min(360px, 70vw);
 }
 
 .search input {
