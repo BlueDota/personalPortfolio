@@ -16,7 +16,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 
 html,
@@ -29,58 +28,55 @@ body {
     margin: 0;
     font-family: system-ui, Segoe UI, Roboto, Arial, Helvetica, sans-serif;
     background: radial-gradient(1200px 700px at 80% -20%, #2b3e8b22, transparent), var(--bg);
-    color: var(--ink)
+    color: var(--ink);
 }
 
 a {
     color: var(--accent);
-    text-decoration: none
+    text-decoration: none;
 }
 
 img {
     max-width: 100%;
-    display: block
+    display: block;
 }
-.imgContainer{
-   
+.imgContainer {
     display: grid;
     place-items: center;
     position: relative;
-    
-
 }
 @property --angle{
     syntax: "<angle>";
     inherits: true;
     initial-value: 0deg;
 }
-.imgBorder{
+.imgBorder {
     position: relative;
     border-radius: 20px;
-
 }
 
 .imgBorder::after,
 .imgBorder::before {
     content: "";
-   position: absolute;
-   inset: 0;
-   z-index: -1;
-   border-radius: 20px;
-   scale: 1.06;
-   background-color: transparent;
-   background-image: conic-gradient(
-       from var(--angle),
-       var(--brand) 0deg 60deg,
-       var(--accent) 60deg 120deg,
-       var(--panel) 120deg 180deg,
-       var(--card) 180deg 240deg,
-       var(--line) 240deg 300deg,
-       var(--brand) 300deg 360deg
-   );
-   animation: border 2s linear infinite;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: 20px;
+    scale: 1.06;
+    background-color: transparent;
+    background-image: conic-gradient(
+        from var(--angle),
+        var(--brand) 0deg 60deg,
+        var(--accent) 60deg 120deg,
+        var(--panel) 120deg 180deg,
+        var(--card) 180deg 240deg,
+        var(--line) 240deg 300deg,
+        var(--brand) 300deg 360deg
+    );
+    animation: border 2s linear infinite;
 }
-.imgBorder::before{
+
+.imgBorder::before {
     filter: blur(80px);
 }
 @keyframes border {
@@ -96,7 +92,6 @@ img {
     max-width: 1160px;
     margin: 0 auto;
     padding: 18px clamp(12px, 3vw, 28px);
-
 }
 
 header {

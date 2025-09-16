@@ -72,7 +72,7 @@
     const body=document.getElementById('msg').value.trim();
     const subject = encodeURIComponent(`Contacto Portafolio — ${name}`);
     const mailBody = encodeURIComponent(`Nombre: ${name}%0AEmail: ${email}%0A%0AMensaje:%0A${body}`);
-    window.location.href = `mailto:tuemail@ejemplo.com?subject=${subject}&body=${mailBody}`;
+    window.location.href = `mailto:bluedota.6@gmail.com?subject=${subject}&body=${mailBody}`;
   });
 
   // Print to PDF
