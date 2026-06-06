@@ -2,38 +2,5 @@ body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
-            background-color: #f4f4f9;
-        }
-        .container {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .column {
-            flex: 1;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .btn-link {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        .btn-link:hover {
-            background-color: #0056b3;
-        }
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
+            background-color: #0d0d0d;
         }
