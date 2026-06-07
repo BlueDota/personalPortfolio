@@ -11,16 +11,16 @@ async function fetchAndRenderTable() {
             const dg = stats.gf - stats.gc;
             return `
                 <tr>
-                    <td>${stats.pos}</td>
-                    <td>${stats.team}</td>
-                    <td>${stats.pj}</td>
-                    <td>${stats.g}</td>
-                    <td>${stats.e}</td>
-                    <td>${stats.p}</td>
-                    <td>${stats.gf}</td>
-                    <td>${stats.gc}</td>
-                    <td>${dg}</td>
-                    <td><strong>${stats.pts}</strong></td>
+                    <td data-label="Pos">${stats.pos}</td>
+                    <td data-label="Equipo">${stats.team}</td>
+                    <td data-label="PJ">${stats.pj}</td>
+                    <td data-label="G">${stats.g}</td>
+                    <td data-label="E">${stats.e}</td>
+                    <td data-label="P">${stats.p}</td>
+                    <td data-label="GF">${stats.gf}</td>
+                    <td data-label="GC">${stats.gc}</td>
+                    <td data-label="DG">${dg}</td>
+                    <td data-label="Pts"><strong>${stats.pts}</strong></td>
                 </tr>
             `;
         }).join('');
