@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -7,66 +7,4 @@ body {
     background-color: #1f1f1f;
     color: #f5f5f5;
 }
-
-main {
-    max-width: 500px;
-    margin: auto;
-    background: #2a2a2a;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-}
-
-h1 {
-    text-align: center;
-    color: #4fc3f7;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 30px;
-}
-
-.table-container {
-    overflow-x: auto;
-}
-
-#resultsTable {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-#resultsTable th, #resultsTable td {
-    padding: 15px 20px;
-    text-align: center;
-    border-bottom: 1px solid #444;
-}
-
-#resultsTable thead tr {
-    background: linear-gradient(45deg, #01579b, #4fc3f7);
-    color: white;
-    font-weight: bold;
-}
-
-#resultsTable tbody tr {
-    transition: background-color 0.3s ease;
-}
-
-#resultsTable tbody tr:nth-child(even) {
-    background-color: #333;
-}
-
-#resultsTable tbody tr:hover {
-    background-color: #4a4a4a;
-}
-
-#resultsTable th:nth-child(2), #resultsTable td:nth-child(2) {
-    text-align: left;
-    font-weight: 700;
-}
-
-#resultsTable td strong {
-    color: #4fc3f7;
-    font-size: 1.1em;
-}
-
 
