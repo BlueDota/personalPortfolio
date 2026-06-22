@@ -15,7 +15,7 @@ body {
 .navHeader {
 
     width: 100%;
-    border: 1px white dashed;
+  
     height: 70px;
     display: flex;
     flex-direction: row;
@@ -43,3 +43,31 @@ height: 1.5rem;
     align-items: center;
     gap: 10px;
 }
+.heroContainer{
+    width: 100%;
+    height: 100dvh;
+    background-color: rgb(46, 43, 43);
+  
+    display: grid;
+    place-items: center;
+    
+}
+.mainContainer>*{
+
+}
+.mainContainer{
+    width: 60vw;
+    height: 80vh;
+   
+    background-color: rgb(47, 38, 38);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+p{margin: 2rem;}
